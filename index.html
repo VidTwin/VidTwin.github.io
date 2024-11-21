@@ -118,7 +118,7 @@
             <div class="content has-text-justified-desktop">
                 <img class="mb-5" src="img/model.png">
                 <p>
-                    Details of our model. After obtaining the latent \(z\) from the Encoder, the process branches into two flows. The <i>Structure Latent</i> extraction module, \(\mathcal{F}_{\boldsymbol{S}}\), which consists of a Q-Former and convolutional networks, extracts the <i>Structure Latent</i> component \(z_{\boldsymbol{S}}\). The <i>Dynamics Latent</i> extraction module, \(\mathcal{F}_{\boldsymbol{S}}\), comprising convolutional networks and an averaging operator, extracts the <i>Dynamics Latent</i> component \(z_{\boldsymbol{D}}\). Finally, using the decoding module, we align all latents to the same dimension and combine them before passing them into the Decoder.
+                    Details of our model. After obtaining the latent \(z\) from the Encoder, the process branches into two flows. The <i>Structure Latent</i> extraction module, \(\mathcal{F}_{\boldsymbol{S}}\), which consists of a Q-Former and convolutional networks, extracts the <i>Structure Latent</i> component \(z_{\boldsymbol{S}}\). The <i>Dynamics Latent</i> extraction module, \(\mathcal{F}_{\boldsymbol{D}}\), comprising convolutional networks and an averaging operator, extracts the <i>Dynamics Latent</i> component \(z_{\boldsymbol{D}}\). Finally, using the decoding module, we align all latents to the same dimension and combine them before passing them into the Decoder.
                 </p>
             </div>
         </div>
@@ -208,7 +208,7 @@
                     </table>
                     <hr style="margin-top:10px">
                     <p>
-                        We conduct a cross-reenactment experiment by combining the <i>Structure Latent</i> from one video, A, with the <i>Dynamics Latent</i> from another video, B, to generate the output from the decoder, represented as \(\mathcal{D}(u^A_{\boldsymbol{S}}, u^B_{\boldsymbol{D}})\). The generated video typically inherits the main object and overall structure from Video A, which provides the <i>Structure Latent</i>, while local details, such as color, come from Video B, which provides the <i>Dynamics Latent</i>. Notably, the movement in the generated video reflects the rapid rotation from Video B while adapting the gradually downward camera view based on the scene in Video A.
+                        We conduct a cross-reenactment experiment by combining the <i>Structure Latent</i> from one video, A, with the <i>Dynamics Latent</i> from another video, B, to generate the output from the decoder, represented as \(\mathcal{D}(u^A_{\boldsymbol{S}}, u^B_{\boldsymbol{D}})\). The generated video typically inherits the main object and overall structure from Video A, which provides the <i>Structure Latent</i>, while local details, such as color, come from Video B, which provides the <i>Dynamics Latent</i>. Notably, the movement in the generated video combines the rapid rotation from Video B with the gradual camera motion from Video A.
                         </p>
             </div>
         </div>
