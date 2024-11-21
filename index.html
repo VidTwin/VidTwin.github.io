@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <script src="https://kit.fontawesome.com/49f46e7382.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
 
+
+  
     <section class="section">
         <div class="container is-max-widescreen">
             <h1 class="title is-2 has-text-centered">
@@ -24,17 +28,84 @@
 
     </section>
 
+    <section>
+        <!-- <h1 class="title is-4">
+            Demos
+        </h1> -->
+        <div class="container">
+        <div class="row">
+            <center class="col-12 text-center">
+        
+                <hr style="margin-top:0px">
+                <table style="table-layout: fixed;">
+                    <tbody>
+                    <tr>
+                        <td width="50%"> <span><strong>&nbsp;&nbsp;&nbsp;&nbsp;Video A (offers S. Latent)   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Video B (offers D. Latent) &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Video C (generated)</strong></span> </td>                            
+                        <td width="50%"> <span><strong>&nbsp;&nbsp;&nbsp;&nbsp;Video A (offers S. Latent)   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Video B (offers D. Latent) &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Video C (generated)</strong></span> </td>    
+                    </tr>
+                    <tr>
+                        <td width="50%"> <img src="video/cross/5.gif" width="98%" alt="Vid.1 GIF"> </td>
+                        <td width="50%"> <img src="video/cross/6.gif" width="98%" alt="Vid.2 GIF"> </td>
+
+                    </tr>
+                    <tr>
+                        <td width="50%"> <span><strong>&nbsp;&nbsp;&nbsp;&nbsp;Video A (offers S. Latent)   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Video B (offers D. Latent) &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Video C (generated)</strong></span> </td>                            
+                        <td width="50%"> <span><strong>&nbsp;&nbsp;&nbsp;&nbsp;Video A (offers S. Latent)   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Video B (offers D. Latent) &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Video C (generated)</strong></span> </td>    
+                    </tr>
+                    <tr>
+                        <td width="50%"> <img src="video/cross/3.gif" width="98%" alt="Vid.1 GIF"> </td>
+                        <td width="50%"> <img src="video/cross/4.gif" width="98%" alt="Vid.2 GIF"> </td>
+
+                    </tr>
+     
+                </tbody>
+                </table>
+
+                <center><p>*Video A provides the <i>Structure Latent</i>, Video B provides the <i>Dynamics Latent</i>, and Video C is the generated video combining them.
+</p></center>
+              
+                
+                    <hr style="margin-top:20px">
+                    <table style="table-layout: fixed;">
+                        <tbody>
+                            <tr>
+                                <td width="50%"> <span><center><strong> Orig.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Recon.  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S. Recon.&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;D. Recon.</strong></center></span> </td>                            
+                                <td width="50%"> <span><center><strong> Orig.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Recon.  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S. Recon.&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;D. Recon.</strong></center></span> </td>  
+                            </tr>
+                            <tr>
+                                <td width="50%"> <img src="video/disen/7.gif" width="98%" alt="Vid.1 GIF"> </td>
+                                <td width="50%"> <img src="video/disen/8.gif" width="98%" alt="Vid.2 GIF"> </td>
+    
+                            </tr>
+    
+                            <tr>
+                                <td width="50%"> <span><center><strong> Orig.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Recon.  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S. Recon.&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;D. Recon.</strong></center></span> </td>                            
+                                <td width="50%"> <span><center><strong> Orig.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Recon.  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S. Recon.&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;D. Recon.</strong></center></span> </td> 
+                            </tr>
+                            <tr>
+                                <td width="50%"> <img src="video/disen/2.gif" width="98%" alt="Vid.1 GIF"> </td>
+                                <td width="50%"> <img src="video/disen/3.gif" width="98%" alt="Vid.2 GIF"> </td>
+    
+                            </tr>
+                        </tbody>
+                        </table>
+                        <center><p>*We present the original (Orig.) and reconstructed (Recon.) videos, along with videos decoded using only the Structure or Dynamics latents, denoted as S. Recon. and D. Recon., respectively.
+                        </p></center>
+            </div>
+        </div>
+        </div>
+    <br>
+    </section>
 
 
 
     <section class="section hero is-light">
         <div class="container is-max-desktop">
             <h1 class="title is-4">
-                Sec.2 &nbsp; Abstract
+                Abstract
             </h1>
             <div class="content has-text-justified-desktop">
-                <p>Recent advancements in video autoencoders (Video AEs) have significantly improved the quality and efficiency of video generation. In this paper, we propose a novel and compact video autoencoder, \modelname, that decouples video into two distinct latent spaces: Structure latent vectors, which capture overall content and global movement, and Dynamics latent vectors, which represent fine-grained details and rapid movements. Specifically, our approach leverages an Encoder-Decoder backbone, augmented with two submodules for extracting these latent spaces, respectively. The first submodule employs a Q-Former to extract low-frequency motion trends, followed by downsampling blocks to remove redundant content details. The second averages the latent vectors along the spatial dimension to capture rapid motion. Extensive experiments show that \modelname achieves a high compression rate of 0.20\% with high reconstruction quality (PSNR of 28.14 on the MCL-JCV dataset), and performs efficiently and effectively in downstream generative tasks. Moreover, our model demonstrates explainability and scalability, paving the way for future research in video latent representation and generation.
-                </p>  
+                <p>Recent advancements in video autoencoders (Video AEs) have significantly improved the quality and efficiency of video generation. In this paper, we propose <strong>a novel and compact video autoencoder, VidTwin, that decouples video into two distinct latent spaces: <i>Structure latent vectors</i>, which capture overall content and global movement, and <i>Dynamics latent vectors</i>, which represent fine-grained details and rapid movements.</strong> Specifically, our approach leverages an Encoder-Decoder backbone, augmented with two submodules for extracting these latent spaces, respectively. The first submodule employs a Q-Former to extract low-frequency motion trends, followed by downsampling blocks to remove redundant content details. The second averages the latent vectors along the spatial dimension to capture rapid motion. Extensive experiments show that VidTwin achieves a high compression rate of 0.20% with high reconstruction quality (PSNR of 28.14 on the MCL-JCV dataset), and performs efficiently and effectively in downstream generative tasks. Moreover, our model demonstrates explainability and scalability, paving the way for future research in video latent representation and generation.</p>
             </div>
         </div>
     </section>
@@ -42,12 +113,12 @@
     <section class="section">
         <div class="container is-max-desktop">
             <h1 class="title is-4">
-                Sec.3 &nbsp;Method
+                Method
             </h1>
             <div class="content has-text-justified-desktop">
                 <img class="mb-5" src="img/model.png">
                 <p>
-                    The InstructAvatar consists of two components: VAE to disentangle motion information from the video and a diffusion model based motion generator to generate the motion latent conditioned on audio and instruction. As we have two types of data, two switches in instruction and audio are designed. During inference, we iteratively denoise Gaussian noise to obtain the predicted motion latent. Together with the user-provided portrait, the resulting video is generated by the decoder of the VAE.
+                    Details of our model. After obtaining the latent \(z\) from the Encoder, the process branches into two flows. The <i>Structure Latent</i> extraction module, \(\mathcal{F}_{\boldsymbol{S}}\), which consists of a Q-Former and convolutional networks, extracts the <i>Structure Latent</i> component \(z_{\boldsymbol{S}}\). The <i>Dynamics Latent</i> extraction module, \(\mathcal{F}_{\boldsymbol{S}}\), comprising convolutional networks and an averaging operator, extracts the <i>Dynamics Latent</i> component \(z_{\boldsymbol{D}}\). Finally, using the decoding module, we align all latents to the same dimension and combine them before passing them into the Decoder.
                 </p>
             </div>
         </div>
@@ -56,7 +127,57 @@
 
     <section>
         <h1 class="title is-4">
-            Sec.1 &nbsp; Demos
+            Additional Decoupling Examples
+        </h1>
+        <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+
+                <hr style="margin-top:0px">
+                <table style="table-layout: fixed;">
+                    <tbody>
+                        <tr>
+                            <td width="50%"> <span><center><strong> Orig.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Recon.  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S. Recon.&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;D. Recon.</strong></center></span> </td>                            
+                            <td width="50%"> <span><center><strong> Orig.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Recon.  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S. Recon.&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;D. Recon.</strong></center></span> </td>  
+                        </tr>
+                        <tr>
+                            <td width="50%"> <img src="video/disen/1.gif" width="98%" alt="Vid.1 GIF"> </td>
+                            <td width="50%"> <img src="video/disen/4.gif" width="98%" alt="Vid.2 GIF"> </td>
+
+                        </tr>
+                        <tr>
+                            <td width="50%"> <span><center><strong> Orig.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Recon.  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S. Recon.&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;D. Recon.</strong></center></span> </td>                            
+                            <td width="50%"> <span><center><strong> Orig.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Recon.  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S. Recon.&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;D. Recon.</strong></center></span> </td> 
+                        </tr>
+                        <tr>
+                            <td width="50%"> <img src="video/disen/5.gif" width="98%" alt="Vid.1 GIF"> </td>
+                            <td width="50%"> <img src="video/disen/6.gif" width="98%" alt="Vid.2 GIF"> </td>
+
+                        </tr>
+                        <tr>
+                            <td width="50%"> <span><center><strong> Orig.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Recon.  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S. Recon.&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;D. Recon.</strong></center></span> </td>                            
+                            <td width="50%"> <span><center><strong> Orig.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Recon.  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S. Recon.&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;D. Recon.</strong></center></span> </td> 
+                        </tr>
+                        <tr>
+                            <td width="50%"> <img src="video/disen/9.gif" width="98%" alt="Vid.1 GIF"> </td>
+                            <td width="50%"> <img src="video/disen/10.gif" width="98%" alt="Vid.2 GIF"> </td>
+
+                        </tr>
+                    </tbody>
+                    </table>
+                    <hr style="margin-top:10px">
+                    <p>
+                        To investigate the roles of the <em>Structure Latent</em> and <em>Dynamics Latent</em>, we decode them individually by passing each through the decoder, i.e., generating results from \(\mathcal{D}(u_{\boldsymbol{S}})\) and \(\mathcal{D}(u_{\boldsymbol{D}})\). The results reveal that the <em>Structure Latent</em> captures the main semantic content of the video, while the <em>Dynamics Latent</em> captures fine-grained details, such as color and rapid local movements. Notably, in many cases, videos generated using the <em>Dynamics Latent</em> exhibit faster movements compared to those generated with the <em>Structure Latent</em>. This observation highlights the distinct contributions of low-frequency and high-frequency motion information in the latent representations.
+                        </p>
+            </div>
+        </div>
+        </div>
+    <br>
+    </section>
+
+    <section>
+        <h1 class="title is-4">
+            Additional Cross-Reenactment Examples
         </h1>
         <div class="container">
         <div class="row">
@@ -66,249 +187,104 @@
                 <table style="table-layout: fixed;">
                     <tbody>
                         <tr>
-                            <td width="50%"> <span><center><strong><i>Vid.1</i> Talk with a mixture of happy and surprised emotions. </strong></center></span> </td>
-                            
-                            <td width="50%"> <span><center><strong> <i>Vid.2</i> Speak with your eyebrows and lids raised. </strong></center></span> </td>
-                            <!-- <td width="33%"> <span><center><strong><i>Vid.3</i>  Sing with happy emotion. </strong></center></span> </td>
-                             -->
+                            <td width="50%"> <span><strong>&nbsp;&nbsp;&nbsp;&nbsp;Video A (offers S. Latent)   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Video B (offers D. Latent) &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Video C (generated)</strong></span> </td>                            
+                            <td width="50%"> <span><strong>&nbsp;&nbsp;&nbsp;&nbsp;Video A (offers S. Latent)   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Video B (offers D. Latent) &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Video C (generated)</strong></span> </td>    
                         </tr>
                         <tr>
-                            <!-- <td width="33%"> <video width="95%" controls> <source src="video/out2.gif" type="video/gif"> </video> </td> -->
-                            <td width="50%"> <img src="video/recon_baselines/out1_2.gif" width="95%" alt="Vid.1 GIF"> </td>
-                            <td width="50%"> <img src="video/recon_baselines/out2.gif" width="95%" alt="Vid.2 GIF"> </td>
-                            <!-- <td width="33%"> <video width="95%" controls> <source src="video/emotional_talking/3.mp4" type="video/mp4"> </video> </td> -->
-                        </tr>
-                        <!-- <tr>
-                            
-                            <td width="33%"> <span><center><strong><i>Vid.4</i>  Talk with happy emotion. </strong></center></span> </td>
-                            <td width="33%"> <span><center><strong><i>Vid.5</i>  Be angry when talking. </strong></center></span> </td>
-                            <td width="33%"> <span><center><strong><i>Vid.6</i>  Speak as if your emotion was astonished. </strong></center></span> </td>
-                            
+                            <td width="50%"> <img src="video/cross/1.gif" width="98%" alt="Vid.1 GIF"> </td>
+                            <td width="50%"> <img src="video/cross/2.gif" width="98%" alt="Vid.2 GIF"> </td>
+
                         </tr>
                         <tr>
-                            <td width="33%"> <video width="95%" controls> <source src="video/emotional_talking/4.mp4" type="video/mp4"> </video> </td>
-                            <td width="33%"> <video width="95%" controls> <source src="video/emotional_talking/5.mp4" type="video/mp4"> </video> </td>
-                            <td width="33%"> <video width="95%" controls> <source src="video/emotional_talking/6.mp4" type="video/mp4"> </video> </td>
-                        </tr> -->
+                            <td width="50%"> <span><strong>&nbsp;&nbsp;&nbsp;&nbsp;Video A (offers S. Latent)   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Video B (offers D. Latent) &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Video C (generated)</strong></span> </td>                            
+                            <td width="50%"> <span><strong>&nbsp;&nbsp;&nbsp;&nbsp;Video A (offers S. Latent)   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Video B (offers D. Latent) &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Video C (generated)</strong></span> </td>    
+                        </tr>
+                        <tr>
+                            <td width="50%"> <img src="video/cross/7.gif" width="98%" alt="Vid.1 GIF"> </td>
+                            <td width="50%"> <img src="video/cross/8.gif" width="98%" alt="Vid.2 GIF"> </td>
+
+                        </tr>
                     </tbody>
                     </table>
-                    <hr style="margin-top:0px">
+                    <hr style="margin-top:10px">
+                    <p>
+                        We conduct a cross-reenactment experiment by combining the <i>Structure Latent</i> from one video, A, with the <i>Dynamics Latent</i> from another video, B, to generate the output from the decoder, represented as \(\mathcal{D}(u^A_{\boldsymbol{S}}, u^B_{\boldsymbol{D}})\). The generated video typically inherits the main object and overall structure from Video A, which provides the <i>Structure Latent</i>, while local details, such as color, come from Video B, which provides the <i>Dynamics Latent</i>. Notably, the movement in the generated video reflects the rapid rotation from Video B while adapting the gradually downward camera view based on the scene in Video A.
+                        </p>
+            </div>
+        </div>
+        </div>
+    <br>
+    </section>
+
+
+
+
+    <section>
+        <h1 class="title is-4">
+            Reconstruction Examples
+        </h1>
+        <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+        
+                <hr style="margin-top:0px">
+                <table style="table-layout: fixed;">
+                    <tbody>
+                        <tr>
+                            <td width="33%"> <span><center><strong>Orig.&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Recon.</strong></center></span> </td>
+                            <td width="33%"> <span><center><strong>Orig.&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Recon.</strong></center></span> </td>
+                            <td width="33%"> <span><center><strong>Orig.&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Recon.</strong></center></span> </td>
+                            
+                        
+                        </tr>
+                        <tr>
+                            <td width="33%"> <img src="video/recon/1.gif" width="98%" alt="Vid.1 GIF"> </td>
+                            <td width="33%"> <img src="video/recon/2.gif" width="98%" alt="Vid.2 GIF"> </td>
+                            <td width="33%"> <img src="video/recon/3.gif" width="98%" alt="Vid.2 GIF"> </td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <p>
+                        We present the original video (Orig.) alongside videos reconstructed by our model (Recon.), demonstrating the model's ability to effectively capture intricate details and preserve rapid motion dynamics, such as the light trails of a fast-moving car.
+
+
+                        </p>
+                        <hr style="margin-top:10px">
                     <table style="table-layout: fixed;">
                         <tbody>
                             <tr>
-                                <td width="33%"> <span><center><strong><i>Vid.7</i>  Open your mouth and close it, and then turn your head left. </strong></center></span> </td>
-                                <td width="33%"> <span><center><strong><i>Vid.8</i>  Raise your cheek and pull your lip corners. </strong></center></span> </td>
-                                <td width="33%"> <span><center><strong><i>Vid.9</i>  Lower your head, please. </strong></center></span> </td>
+                                <td width="50%"> <span><strong>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Orig.&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iVideoGPT &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;MAGVIT-v2 </strong></span> </td>
                                 
-                            
+                                <td width="50%"> <span><strong>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Orig.&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iVideoGPT &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;MAGVIT-v2 </strong></span> </td>
+
                             </tr>
                             <tr>
-                                <td width="33%"> <img src="video/recon/video1.gif" width="95%" alt="Vid.1 GIF"> </td>
-                                <td width="33%"> <img src="video/recon/video2.gif" width="95%" alt="Vid.2 GIF"> </td>
-                                <td width="33%"> <img src="video/recon/video3.gif" width="95%" alt="Vid.2 GIF"> </td>
-                            </tr>
-                            <!-- <tr>
-                                <td width="33%"> <span><center><strong> <i>Vid.10</i> Turn your head left, please. </strong></center></span> </td>
-                                <td width="33%"> <span><center><strong><i>Vid.11</i>  Give me a surprised emotion. </strong></center></span> </td>
-                                <td width="33%"> <span><center><strong><i>Vid.12</i>  Open your mouth. </strong></center></span> </td>
-                                
+                                <!-- <td width="33%"> <video width="98%" controls> <source src="video/out2.gif" type="video/gif"> </video> </td> -->
+                                <td width="50%"> <img src="video/recon_baselines/1.gif" width="98%" alt="Vid.1 GIF"> </td>
+                                <td width="50%"> <img src="video/recon_baselines/2.gif" width="98%" alt="Vid.2 GIF"> </td>
+                                <!-- <td width="33%"> <video width="98%" controls> <source src="video/emotional_talking/3.mp4" type="video/mp4"> </video> </td> -->
                             </tr>
                             <tr>
-                                <td width="33%"> <video width="95%" controls> <source src="video/facial_motion/4.mp4" type="video/mp4"> </video> </td>
-                                <td width="33%"> <video width="95%" controls> <source src="video/facial_motion/5.mp4" type="video/mp4"> </video> </td>
-                                <td width="33%"> <video width="95%" controls> <source src="video/facial_motion/6.mp4" type="video/mp4"> </video> </td>
-                            </tr> -->
+                                <td width="50%"> <span><strong>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;EMU3&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CMD &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;VidTwin(Ours) </strong></span> </td>
+                                
+                                <td width="50%"> <span><strong>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;EMU3&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CMD &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;VidTwin(Ours) </strong></span> </td>
+
+                            </tr>
                         </tbody>
                         </table>
+                        <br>
+                        <br>
+                        <p>
+                            We also present the reconstruction performance of our model compared to the baselines. Two examples are showcased: a gradually rotating photo and a fast-motion boxing scene. VidTwin demonstrates superior ability in reconstructing fine details and accurately capturing rapid motion.
+                            </p>
+                            
             </div>
         </div>
         </div>
     <br>
     </section>
 
-    <section>
-        <h1 class="title is-4">
-            Sec.1 &nbsp; Demos
-        </h1>
-        <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-        
-                <hr style="margin-top:0px">
-                <table style="table-layout: fixed;">
-                    <tbody>
-                        <tr>
-                            <td width="50%"> <span><center><strong><i>Vid.1</i> Talk with a mixture of happy and surprised emotions. </strong></center></span> </td>                            
-                            <td width="50%"> <span><center><strong> <i>Vid.2</i> Speak with your eyebrows and lids raised. </strong></center></span> </td>
-                        </tr>
-                        <tr>
-                            <td width="50%"> <img src="video/disen/1.gif" width="95%" alt="Vid.1 GIF"> </td>
-                            <td width="50%"> <img src="video/disen/2.gif" width="95%" alt="Vid.2 GIF"> </td>
-
-                        </tr>
-                        <tr>
-                            <td width="50%"> <span><center><strong><i>Vid.1</i> Talk with a mixture of happy and surprised emotions. </strong></center></span> </td>                            
-                            <td width="50%"> <span><center><strong> <i>Vid.2</i> Speak with your eyebrows and lids raised. </strong></center></span> </td>
-                        </tr>
-                        <tr>
-                            <td width="50%"> <img src="video/disen/3.gif" width="95%" alt="Vid.1 GIF"> </td>
-                            <td width="50%"> <img src="video/disen/4.gif" width="95%" alt="Vid.2 GIF"> </td>
-
-                        </tr>
-                        <tr>
-                            <td width="50%"> <span><center><strong><i>Vid.1</i> Talk with a mixture of happy and surprised emotions. </strong></center></span> </td>                            
-                            <td width="50%"> <span><center><strong> <i>Vid.2</i> Speak with your eyebrows and lids raised. </strong></center></span> </td>
-                        </tr>
-                        <tr>
-                            <td width="50%"> <img src="video/disen/5.gif" width="95%" alt="Vid.1 GIF"> </td>
-                            <td width="50%"> <img src="video/disen/6.gif" width="95%" alt="Vid.2 GIF"> </td>
-
-                        </tr>
-                        <tr>
-                            <td width="50%"> <span><center><strong><i>Vid.1</i> Talk with a mixture of happy and surprised emotions. </strong></center></span> </td>                            
-                            <td width="50%"> <span><center><strong> <i>Vid.2</i> Speak with your eyebrows and lids raised. </strong></center></span> </td>
-                        </tr>
-                        <tr>
-                            <td width="50%"> <img src="video/disen/7.gif" width="95%" alt="Vid.1 GIF"> </td>
-                            <td width="50%"> <img src="video/disen/8.gif" width="95%" alt="Vid.2 GIF"> </td>
-
-                        </tr>
-                        <tr>
-                            <td width="50%"> <span><center><strong><i>Vid.1</i> Talk with a mixture of happy and surprised emotions. </strong></center></span> </td>                            
-                            <td width="50%"> <span><center><strong> <i>Vid.2</i> Speak with your eyebrows and lids raised. </strong></center></span> </td>
-                        </tr>
-                        <tr>
-                            <td width="50%"> <img src="video/disen/9.gif" width="95%" alt="Vid.1 GIF"> </td>
-                            <td width="50%"> <img src="video/disen/10.gif" width="95%" alt="Vid.2 GIF"> </td>
-
-                        </tr>
-                    </tbody>
-                    </table>
-            </div>
-        </div>
-        </div>
-    <br>
-    </section>
-
-
-
-    <section>
-        <h1 class="title is-4">
-            Sec.1 &nbsp; Demos
-        </h1>
-        <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-        
-                <hr style="margin-top:0px">
-                <table style="table-layout: fixed;">
-                    <tbody>
-                        <tr>
-                            <td width="50%"> <span><center><strong><i>Vid.1</i> Talk with a mixture of happy and surprised emotions. </strong></center></span> </td>                            
-                            <td width="50%"> <span><center><strong> <i>Vid.2</i> Speak with your eyebrows and lids raised. </strong></center></span> </td>
-                        </tr>
-                        <tr>
-                            <td width="50%"> <img src="video/cross/1.gif" width="95%" alt="Vid.1 GIF"> </td>
-                            <td width="50%"> <img src="video/cross/2.gif" width="95%" alt="Vid.2 GIF"> </td>
-
-                        </tr>
-                        <tr>
-                            <td width="50%"> <span><center><strong><i>Vid.1</i> Talk with a mixture of happy and surprised emotions. </strong></center></span> </td>                            
-                            <td width="50%"> <span><center><strong> <i>Vid.2</i> Speak with your eyebrows and lids raised. </strong></center></span> </td>
-                        </tr>
-                        <tr>
-                            <td width="50%"> <img src="video/cross/3.gif" width="95%" alt="Vid.1 GIF"> </td>
-                            <td width="50%"> <img src="video/cross/4.gif" width="95%" alt="Vid.2 GIF"> </td>
-
-                        </tr>
-                        <tr>
-                            <td width="50%"> <span><center><strong><i>Vid.1</i> Talk with a mixture of happy and surprised emotions. </strong></center></span> </td>                            
-                            <td width="50%"> <span><center><strong> <i>Vid.2</i> Speak with your eyebrows and lids raised. </strong></center></span> </td>
-                        </tr>
-                        <tr>
-                            <td width="50%"> <img src="video/cross/5.gif" width="95%" alt="Vid.1 GIF"> </td>
-                            <td width="50%"> <img src="video/cross/6.gif" width="95%" alt="Vid.2 GIF"> </td>
-
-                        </tr>
-                        <tr>
-                            <td width="50%"> <span><center><strong><i>Vid.1</i> Talk with a mixture of happy and surprised emotions. </strong></center></span> </td>                            
-                            <td width="50%"> <span><center><strong> <i>Vid.2</i> Speak with your eyebrows and lids raised. </strong></center></span> </td>
-                        </tr>
-                        <tr>
-                            <td width="50%"> <img src="video/cross/7.gif" width="95%" alt="Vid.1 GIF"> </td>
-                            <td width="50%"> <img src="video/cross/8.gif" width="95%" alt="Vid.2 GIF"> </td>
-
-                        </tr>
-                    </tbody>
-                    </table>
-            </div>
-        </div>
-        </div>
-    <br>
-    </section>
-
-
-
-
-    <section class="section pt-0">
-        <div class="container is-max-desktop">
-            <h1 class="title is-4">
-                Sec.4 &nbsp;Comparison: Emotional talking face generation
-            </h1>
-            <div class="content has-text-justified-desktop">
-                <video controls="" width="100%">
-                    <source src="video/comparison.mp4" type="video/mp4">
-                </video>
-                <p>
-                    Qualitative comparison with baselines. It shows that InstructAvatar achieves well lip-sync quality and emotion controllability. Additionally, the outputs generated by our model exhibit enhanced naturalness and effectively preserve identity characteristics. It's also worth mentioning that our model infers talking emotion solely based on text inputs, <strong>which intuitively poses a more challenging task</strong>. Additionally, our model supports a broader scope of instructions beyond high-level emotion types, which is absent for most baselines.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section pt-0">
-        <div class="container is-max-desktop">
-            <h1 class="title is-4">
-                Sec.5 &nbsp;Visualization: More results of emotional talking control
-            </h1>
-            <div class="content has-text-justified-desktop">
-                <video controls="" width="100%">
-                    <source src="video/emotion_more.mp4" type="video/mp4">
-                </video>
-                <p>
-                    Additional outcomes concerning text-guided emotional talking control are presented above. We can see that our model exhibits precise emotion control ability, with the generated results appearing natural. Furthermore, InstructAvatar supports fine-grained control and demonstrates reasonable generalization ability beyond the domain.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section pt-0">
-        <div class="container is-max-desktop">
-            <h1 class="title is-4">
-                Sec.6 &nbsp;Visualization: More results of facial motion control
-            </h1>
-            <video controls="" width="100%">
-                <source src="video/motion_more.mp4" type="video/mp4">
-            </video>
-            <p>
-                We show more results about facial motion control above. It is evident that InstructAvatar exhibits remarkable proficiency in following instructions and preserving identity. Furthermore, the generated results appear natural and robust with variations in the provided portrait. Moreover, our model demonstrates fine-grained control capability and performs effectively in out-of-domain scenarios.
-            </p>
-        </div>
-    </section>
-
-
-    <!-- <section class="section hero is-light">
-        <div class="container is-max-desktop">
-            <h1 class="title is-4">
-                Sec.7 &nbsp;Ethical Consideration
-            </h1>
-            <div class="content has-text-justified-desktop">
-                <p>
-                    InstructAvatar is designed to advance AI research on talking avatar generation. Responsible usage is strongly encouraged, and we discourage users from employing our model to generate intentionally deceptive content or engage in other inauthentic activities. To prevent misuse, adding watermarks is a common approach. Moreover, as a generative model, our results can be utilized to construct artificial datasets and train discriminative models.
-                </p>
-            </div>
-        </div>
-    </section> -->
 
 </body>
 
