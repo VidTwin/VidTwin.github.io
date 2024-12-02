@@ -13,10 +13,90 @@
 </head>
 
 <body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="container is-max-desktop">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">
+                    <img src="img/Microsoft-logo.svg" alt="Microsoft Research Asia" style="height: 1.4rem;">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </nav> 
 
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <h1 class="title is-2 has-text-centered">
+             VidTwin: Video VAE with Decoupled Structure and Dynamics
+            </h1>
+            <p class="subtitle is-4 has-text-centered">
+                 <br>
+            </p>
+        </div>
+        <div class="container is-max-desktop">
+            <p class="subtitle is-6 has-text-centered authors" style="line-height: 1.8; font-size:18px;">
+                <span>
+                    <a href="https://wangyuchi369.github.io/">Yuchi&nbsp;Wang<sup>1</sup></a>
+                </span>
+                <span>
+                    <a href="https://leoguojl.me/">Junliang&nbsp;Guo<sup>2</sup></a>
+                </span>
+                <span>
+                    <a href="https://orcid.org/0009-0000-6538-0794">Xinyi&nbsp;Xie<sup>3</sup></a>
+                </span>
+                <span>
+                    <a href="https://www.microsoft.com/en-us/research/people/tianyuhe">Tianyu&nbsp;He<sup>2</sup></a>
+                </span>
+                <span>
+                    <a href="https://xusun26.github.io/">Xu&nbsp;Sun<sup>1</sup></a>
+                </span>
+                <span>
+                    <a href="https://sites.google.com/view/jiangbian" class="has-tooltip-bottom" data-tooltip="† indicates corresponding author">Jiang&nbsp;Bian<sup>2</sup></a>
+                </span>
+               
+            </p>
+            <p class="subtitle is-6 has-text-centered authors" style="line-height: 1.3;font-size:17px;">
+                <span>
+                    <sup>1</sup>Peking University
+                </span>
+                <span>
+                    <sup>2</sup>Microsoft
+                </span>
+                <span>
+                    <sup>3</sup>CUHK
+                </span>
+            </p>
+        </div>
+        <div class="container is-max-desktop has-text-centered mt-5">
+            <a href="XXXX" class="button is-rounded is-link is-light mr-2">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Paper</span>
+            </a>
+            <!-- <a href="https://xxx" class="button is-rounded is-link is-light mr-2">
+                <span class="icon"><i class="fas fa-file"></i></span>
+                <span>Supplementary</span>
+            </a> -->
+            <a href="XXX" class="button is-rounded is-link is-light mr-2">
+                <span class="icon"><i class="ai ai-arxiv"></i></span>
+                <span>arXiv</span>
+            </a>
+             <!-- <a href="https://xxx" class="button is-rounded is-link is-light mr-2">
+                <span class="icon"><i class="fab fa-youtube"></i></span>
+                <span>Video</span>
+            </a> -->
+            <!-- <a href="https://github.com/wangyuchi369/InstructAvatar" class="button is-rounded is-link is-light">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Code (Coming soon)</span>
+            </a>  -->
+         </div> 
+    </section>
 
   
-    <section class="section">
+    <!-- <section class="section">
         <div class="container is-max-widescreen">
             <h1 class="title is-2 has-text-centered">
             VidTwin: Video VAE with Decoupled Structure and Dynamics
@@ -24,14 +104,11 @@
             <p class="subtitle is-4 has-text-centered">
                 <br>
             </p>
-        </div>
+        </div> -->
 
     </section>
 
     <section>
-        <!-- <h1 class="title is-4">
-            Demos
-        </h1> -->
         <div class="container">
         <div class="row">
             <center class="col-12 text-center">
@@ -261,10 +338,8 @@
 
                             </tr>
                             <tr>
-                                <!-- <td width="33%"> <video width="98%" controls> <source src="video/out2.gif" type="video/gif"> </video> </td> -->
                                 <td width="50%"> <img src="video/recon_baselines/1.gif" width="98%" alt="Vid.1 GIF"> </td>
                                 <td width="50%"> <img src="video/recon_baselines/2.gif" width="98%" alt="Vid.2 GIF"> </td>
-                                <!-- <td width="33%"> <video width="98%" controls> <source src="video/emotional_talking/3.mp4" type="video/mp4"> </video> </td> -->
                             </tr>
                             <tr>
                                 <td width="50%"> <span><strong>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;EMU3&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CMD &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;VidTwin(Ours) </strong></span> </td>
@@ -286,6 +361,32 @@
     <br>
     </section>
 
+
+<br>
+    <section class="section pt-0">
+        <div class="container is-max-desktop">
+            <h1 class="title is-4">
+                Citation
+            </h1>
+            <pre>
+@article{he2023gaia,
+    title={GAIA: Zero-shot Talking Avatar Generation},
+    author={He, Tianyu and Guo, Junliang and Yu, Runyi and Wang, Yuchi and Zhu, Jialiang and An, Kaikai and Li, Leyi and Tan, Xu and Wang, Chunyu and Hu, Han and Wu, HsiangTao and Zhao, Sheng and Bian, Jiang},
+    journal={arXiv preprint arXiv:xxxx.xxxxx},
+    year={2023}
+}</pre>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Work conducted at the <a href=https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/>Microsoft Research Asia</a>.
+                </br>This page is for research demonstration purposes only.</br>
+                </br>The website template was adapted from <a href=https://microsoft.github.io/FaceSynthetics/>here</a></br>
+                <img src="img/Microsoft-logo-only.svg" class="mt-5" alt="Mixed Reality & AI Lab – Cambridge" style="height: 2rem;">
+            </p>
+        </div>
+    </footer>
 
 </body>
 
